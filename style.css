@@ -275,7 +275,7 @@ span {
 .text-animation span::before {
     content: "Web Developer";
     color: var(--main-color);
-    animation: words 20s infinite;
+    animation: words 12s infinite;
 }
 
 .text-animation span::after {
@@ -298,28 +298,18 @@ span {
 @keyframes words {
 
     0%,
-    20% {
-        content: "Frontend Developer";
+    33% {
+        content: "Full-Stack Developer";
     }
 
-    21%,
-    40% {
-        content: "Web Designer"
+    34%,
+    66% {
+        content: "Web Developer";
     }
 
-    41%,
-    60% {
-        content: "Full-Stack Developer"
-    }
-
-    61%,
-    80% {
-        content: "Web Developer"
-    }
-
-    80%,
+    67%,
     100% {
-        content: "Python Developer"
+        content: "UI/UX Designer";
     }
 }
 
@@ -849,4 +839,48 @@ footer ul li a {
     .services-container {
         grid-template-columns: repeat(1, 1fr);
     }
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.contact-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 1.6rem;
+    background: var(--second-bg-color);
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    border: 2px solid var(--main-color);
+    box-shadow: 0 0 10px var(--main-color);
+    transition: 0.3s ease-in-out;
+    color: var(--main-color);
+}
+
+.contact-item i {
+    font-size: 2rem;
+    color: var(--main-color);
+}
+
+.contact-item a {
+    color: var(--main-color);
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.contact-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px var(--main-color);
+}
+
+.contact-item a:hover {
+    color: white;
+    text-decoration: underline;
 }
